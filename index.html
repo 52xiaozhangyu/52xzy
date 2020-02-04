@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我爱小章鱼</title>
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<linkrel="Bookmark" href="favicon.ico">
+		<style>
+			.top {
+				overflow: hidden;
+			}
+			
+			.search {
+				border: 1px solid #a1a1a1;
+				background: #F3F6F8;
+				width: 498px;
+				height: 32px;
+				border-radius: 25px;
+				margin-top: 30px;
+			}
+			
+			.item {
+				float: left;
+				font-size: 14px;
+				margin-left: 18px;
+				margin-top: 6px;
+				width: 40px;
+			}
+			
+			.searchBtn {
+			    
+				background: none;
+				height: 34px;
+				color: #FFF;
+				background-color: #1479d7;
+				border-radius: 20px;
+				font-size: 16px;
+				cursor: pointer;
+				border: none;
+				margin-top: -2px;
+				width: 100px;
+				
+			}
+			
+			#baiduTxt {
+				margin-top: 7px;
+				width: 320px;
+				background-color:#F3F6F8;
+				border: none;
+			}
+			
+			@media (max-width: 1279px) .outmenu {
+				width: 1000px;
+				min-width: 1000px;
+				margin: 0px auto;
+			}
+			
+			@media (max-width: 1279px) .outmenu .menu {
+				height: 45px;
+				font-size: 16px;
+				padding-left: 9px;
+			}
+			
+			.outmenu .menu {
+				position: relative;
+				height: 50px;
+				padding-left: 20px;
+				background-color: #1479d7;
+				font-size: 18px;
+				border-radius: 3px;
+				margin-top: -20px;
+			}
+			
+			ul {
+				list-style-type: none;
+			}
+			
+			li a {
+				float: left;
+				display: block;
+				color: #fff;
+				text-align: center;
+				padding: 12px 16px;
+				text-decoration: none;
+			}
+			
+			li a:hover {
+				background-color: lightgray;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.ti {
+				display: inline-block;
+			}
+			
+			table a {
+				text-decoration: none;
+				color: #455569;
+				text-align: -webkit-match-parent;
+			}
+			
+			.phone {
+				background-image: url(img/icons.png);
+				background-position: -15px -293px;
+				background-repeat: no-repeat;
+				width: 30px;
+				height: 34px;
+			}
+			
+			.star {
+				background-image: url(img/icons.png);
+				background-position: -15px -341px;
+				background-repeat: no-repeat;
+				width: 30px;
+				height: 34px;
+			}
+			
+			.game {
+				background-image: url(img/icons.png);
+				background-position: -15px -388px;
+				background-repeat: no-repeat;
+				width: 30px;
+				height: 34px;
+			}
+			
+			.coffe {
+				background-image: url(img/icons.png);
+				background-position: -15px -440px;
+				background-repeat: no-repeat;
+				width: 30px;
+				height: 34px;
+			}
+			
+			td a:hover {
+				color: #0c82ff;
+			}
+			
+			.midtop a {
+				color: #222;
+			}
+			
+			.lfbd a {
+				color: #222;
+			}
+			
+			.lefttop a {
+				color: #222;
+			}
+			
+			.lefttop a:hover {
+				color: #0c82ff;
+			}
+			
+			.midtop a:hover {
+				color: #0c82ff;
+			}
+			
+			.lfbd a:hover {
+				color: #0c82ff;
+			}
+			
+			.qzone {
+				background-image: url(img/icons.png);
+				background-repeat: no-repeat;
+				background-position: 0px -99px;
+				width: 25px;
+				height: 30px;
+			}
+			
+			.qzone:hover {
+				background-image: url(img/icons.png);
+				background-repeat: no-repeat;
+				background-position: 0px -149px;
+			}
+			
+			.log {
+				background-image: url(img/icons.png);
+				background-repeat: no-repeat;
+				background-color: #F5F5F5;
+				background-position: 0px -10px;
+				width: 33px;
+				height: 30px;
+				font-size: 13px;
+				text-align: center;
+				line-height: 30px;
+				color: #66A8E5;
+			}
+			
+			.email:hover {
+				background-image: url(img/icons.png);
+				background-repeat: no-repeat;
+				background-position: 0px -242px;
+			}
+			
+			.email {
+				background-image: url(img/icons.png);
+				background-repeat: no-repeat;
+				background-position: 0px -192px;
+				width: 25px;
+				height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top">
+			<div class="icon" style="float: left;">
+				<h1>
+				<a href="https://www.qq.com/" target="_blank"><img src="img/QQ图片20200131125143.png" width="75%"/></a>
+			</h1>
+			</div>
+			<div style="float: left;margin-left: 100px;overflow: hidden;" class="search">
+				<div class="item">网页</div>
+				<input id="baiduTxt" type="text" value="" aria-label="请输入搜索文字" autocomplete="off">
+				<div class="fl" style="float: right;width: 100px;height: 32px;overflow: hidden;">
+					<button class="searchBtn" type="submit">百度搜索</button>
+				</div>
+			</div>
+		
+			<div style="float: right;margin-top: 30px;margin-right: 20px;" class="log">
+				<a>登陆</a>
+			</div>
+			<a href="https://mail.qq.com/cgi-bin/loginpage" target="_blank">
+			<div style="float: right;margin-top: 30px;margin-right: 20px;" class="email"></div></a>
+			<a href="https://qzone.qq.com" target="_blank">
+			<div style="float: right;margin-top: 30px;margin-right: 20px;" class="qzone"></div></a>
+		
+		</div>
+		<div class="outmenu">
+			<div class="menu">
+				<ul class="list">
+					<li>
+						<a href="http://news.qq.com" target="_blank">新闻</a>
+					</li>
+					<li>
+						<a href="http://v.qq.com" target="_blank">视频</a>
+					</li>
+					<li>
+						<a href="http://new.qq.com/ch/photo/" target="_blank">图片</a>
+					</li>
+					<li>
+						<a href="https://new.qq.com/ch/milite/" target="_blank">军事</a>
+					</li>
+					<li>
+						<a href="http://sports.qq.com/" target="_blank">体育</a>
+					</li>
+					<li>
+						<a href="http://sports.qq.com/nba/" target="_blank">NBA</a>
+					</li>
+					<li>
+						<a href="https://new.qq.com/ch/ent/" target="_blank">娱乐</a>
+					</li>
+					<li>
+						<a href="http://finance.qq.com" target="_blank">财经</a>
+					</li>
+					<li>
+						<a href="https://new.qq.com/ch/tech/" target="_blank">科技</a>
+					</li>
+					<li>
+						<a href="https://new.qq.com/ch/fashion/" target="_blank">时尚</a>
+					</li>
+					<li>
+						<a href="http://auto.qq.com/" target="_blank">汽车</a>
+					</li>
+					<li>
+						<a href="http://house.qq.com/" target="_blank">房产</a>
+					</li>
+					<li>
+						<a href="https://new.qq.com/ch/edu/" target="_blank">教育</a>
+					</li>
+					<li>
+						<a href="https://new.qq.com/ch/cul/" target="_blank">文化</a>
+					</li>
+					<li>
+						<a href="https://new.qq.com/ch/games/" target="_blank">游戏</a>
+					</li>
+					<li>
+						<a href="http://astro.fashion.qq.com/" target="_blank">星座</a>
+					</li>
+					<li>
+						<a>更多</a>
+				</ul>
+		
+			</div>
+		
+		</div>
+		<div class="adv" style="margin-top: 30px;">
+			<div style="float: left;">
+			<a href="https://news.qq.com/mobile/index.htm" target="_blank">
+				<img src="img/QQ图片20200204124007.png" width="850px" height="100px" /></a>
+			</div>
+			<div style="float: right;">
+			<a href="http://report.12377.cn:13225/toreportinputNormal_anis.do" target="_blank">
+				<img src="img/QQ图片20200204124439.png" width="356px" height="100px" /></a>
+			</div>
+		</div>
+		
+		<div class="left" style="overflow: hidden;margin-top: 50px;width:33%;height: 500px;">
+			<div class="lefttop" style="overflow: hidden;font-size: 25px;">
+				<div style="float: left;overflow: hidden;">
+					<p class="ti">
+						<a href="http://news.qq.com" target="_blank">要闻</a>&nbsp;&nbsp;&nbsp;&nbsp;|
+					</p>
+					<p class="ti">
+						<a href="http://hn.qq.com/" target="_blank">&nbsp;&nbsp;湖南新闻</a>
+					</p>
+		
+				</div>
+				<div style="float: left;margin-top: 10px;margin-left: 90px;">
+					<p style="font-size: 15px;">
+						<a href="https://tianqi.qq.com/?province=%E6%B9%96%E5%8D%97%E7%9C%81&city=%E9%82%B5%E9%98%B3%E5%B8%82" target="_blank">
+							邵阳&nbsp;&nbsp;<img src="img/QQ图片20200204124807.png" width="" height="">&nbsp;&nbsp;10℃</a>
+					</p>
+				</div>
+		
+			</div>
+			<div style="margin-top: -15px;margin-left: -7px;">
+				<img src="img/QQ图片20200204153211.png" height="" width="" style="margin-top: -50px;" />
+			</div>
+			<div class="lfbd" style="display: block;overflow: hidden;float: left; ">
+				<p style="font-size: 18px;font-weight: 1000;">
+					<a href="https://new.qq.com/omn/TWF20200/TWF2020020400836800.html" target="_blank">微视频｜我们向光前行</a>
+				</p>
+				<p>
+					<a style="color:;" href="https://new.qq.com/omn/TWF20200/TWF2020020400727400.html" target="_blank">正是共担风雨时</a>
+				</p>
+				<p>
+					<a style="color:;" href="https://new.qq.com/omn/PEG20200/PEG2020020400585900.html" target="_blank" title="打响疫情防控的人民战争">打响疫情防控的人民战争</a>
+				</p>
+				<p>
+					<a style="color:;" href="https://new.qq.com/omn/PEG20200/PEG2020020400628100.html" target="_blank" title="中国有政策空间应对疫情">中国有政策空间应对疫情</a>
+				</p>
+				<p>
+					<a style="color:;" href="https://new.qq.com/omn/PEG20200/PEG2020020400587900.html" target="_blank" title="新华网评：同时间赛跑 与病魔较量">新华网评：同时间赛跑 与病魔较量</a>
+				</p>
+				<p>
+					<a href="https://new.qq.com/omn/20181029/20181029A0SZ37.html" target="_blank">病毒在空气中最多存活几天？宠物和人是否传染？</a>
+		
+				</p>
+				<p>
+					<a href="https://new.qq.com/omn/20181030/20181030A0ADV1.html" target="_blank">警惕！北京市累计确诊212例 超半数为聚集性活动引起</a>
+				</p>
+			</div>
+		</div>
+		
+		<div class="midtop" style="overflow: hidden;margin-left: 450px;margin-top:-500px;width:33%;height: 500px;">
+			<div style="float: left;overflow: hidden;font-size: 25px;">
+				<p class="ti">
+					<a href="http://view.news.qq.com/" target="_blank">今日话题</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				</p>
+				<div style="margin-top: -32px;margin-left: -7px;">
+					<img src="img/QQ图片20200204132127.png" height="" width="" style="margin-top: -50px;" />
+				</div>
+			</div>
+		
+			<div class="midbd" style="display: block;overflow: hidden;float: left; ">
+				<p style="font-size: 18px;font-weight: 1000;">
+					<a href="https://new.qq.com/omn/20200203/20200203A0N9G400.html" target="_blank">这张对比照刷屏网络后，母亲才知道女儿去了疫情一线</a>
+				</p>
+				<div style="overflow: hidden;margin-top: -20px;">
+					<p class="ti">
+						<a href="https://new.qq.com/omn/author/26122" target="_blank">侠客岛</a>&nbsp;|&nbsp;
+						<a style="color:;" href="https://new.qq.com/omn/20200203/20200203A0NVEU00.html" target="_blank" title="【侠客岛】“10天建座医院，怎么可能完成？”">“10天建座医院，怎么可能完成？”</a>
+					</p>
+				</div>
+				<div style="overflow: hidden;margin-top: -17px;">
+					<p class="ti">
+						<a href="https://new.qq.com/omn/author/5114050" target="_blank">冰点周刊</a>&nbsp;|&nbsp;
+						<a style="color:;" href="https://new.qq.com/omn/20200203/20200203A0LEJE00.html" target="_blank" title="【冰点周刊】他感染了，可仍在网上给患者看病">他感染了，可仍在网上给患者看病</a>
+					</p>
+				</div>
+				<div style="overflow: hidden;margin-top: -17px;">
+					<p class="ti">
+						<a href="https://new.qq.com/omn/author/3285" target="_blank">棱镜</a>&nbsp;|&nbsp;
+						<a style="color:;" href="https://new.qq.com/omn/20200203/20200203A0O62R00.html" target="_blank" title="【棱镜】审批时限两年变四天，试剂盒“一路狂奔”进武汉"">审批时限两年变四天，试剂盒“一路狂奔”进武汉"</a>
+					</p>
+				</div>
+				<div style="overflow: hidden;margin-top: -15px;">
+					<p class="ti">
+						<a href="https://new.qq.com/omn/author/1033" target="_blank">新闻哥</a>&nbsp;|&nbsp;
+						<a href="https://new.qq.com/rain/a/20200203A0MXX300" target="_blank">坏的是病毒不是人，日本这次说对了！</a>
+					</p>
+				</div>
+				<div style="overflow: hidden;margin-top: -17px;">
+					<p class="ti">
+						<a href="https://new.qq.com/omn/author/5157372" target="_blank">深网</a>&nbsp;|&nbsp;
+						<a href="https://view.inews.qq.com/a/20200203A0NO4C00" target="_blank">治愈患者的抗疫日记：走过生死，我总结了这六个建议</a>
+					</p>
+				</div>
+				<div style="overflow: hidden;margin-top: -15px;">
+					<p class="ti">
+						<a href="https://new.qq.com/omn/author/5107513" target="_blank">较真</a>&nbsp;|&nbsp;
+						<a href="https://new.qq.com/omn/20200203/20200203A0JAD900.html" target="_blank">洛匹那韦是什么？一文看懂拗口的新冠肺炎治疗药物</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="midtop" style="float: right; overflow: hidden;margin-top:-500px;width:30%;height: 500px;background: white;">
+			<div>
+				<table cellspacing="0" bordercolor="#CAE0F3" style="float: right;margin-top: 35px;width: 95%;">
+					<tr style="font-size: 13px;font-family: '微软雅黑';height: 34px;background-color:#FFFFFF;">
+						<td style="border:1px;">
+		
+							<a target="_blank" href="http://news.qq.com/mobile/">新闻APP&nbsp;</a>
+							<a target="_blank" href="http://sports.qq.com/kbsweb/">体育APP</a>
+							<a target="_blank" href="https://om.qq.com/userAuth/index">&nbsp;企鹅号</a>
+							<a target="_blank" href="http://kuaibao.qq.com/">&nbsp;快报</a>
+							<a target="_blank" href="http://v.qq.com/download.html#pc">&nbsp;视频</a>
+							<a target="_blank" href="https://browser.qq.com/">&nbsp;浏览器</a>
+							<a target="_blank" href="http://www.weishi.com/">&nbsp;微视</a>
+		
+						</td>
+						<td width="30px">
+							<div class="phone"></div>
+		
+						</td>
+					</tr>
+					<tr style="font-size: 12px;font-family: '微软雅黑';height: 34px;background-color:#F5F8FC;">
+						<td>
+							<a bosszone="cp_1_2_1" target="_blank" href="http://weixin.qq.com/">微信</a>
+							<a target="_blank" href="https://im.qq.com/index.shtml">&nbsp;QQ</a>
+							<a target="_blank" href="https://qzone.qq.com/">&nbsp;空间&nbsp;</a>
+							<a target="_blank" href="https://work.weixin.qq.com/wework_admin/register_wx?from=regopt_tlogo_wxcbar_tengxunwang">企业微信</a>
+							<a target="_blank" href="https://mail.qq.com/cgi-bin/loginpage">&nbsp;邮箱&nbsp;</a>
+							<a target="_blank" href="https://cloud.tencent.com/?fromSource=gwzcw.756432.756432.756432">腾讯云</a>
+							<a target="_blank" href="https://guanjia.qq.com/?ADTAG=media.buy.sogo.SEMTOP1">&nbsp;电脑管家</a>
+							<a target="_blank" href="https://vip.qq.com/">&nbsp;会员</a>
+		
+						</td>
+						<td width="30px">
+							<div class="star"></div>
+		
+						</td>
+					</tr>
+					<tr style="font-size: 12px;font-family: '微软雅黑';height: 34px;background-color:#FFFFFF;">
+						<td>
+							<a target="_blank" href="http://lol.qq.com/index.shtml?ADTAG=media.innerenter.qqcom.index_navigation">LOL&nbsp;</a>
+							<a target="_blank" href="http://dnf.qq.com/?ADTAG=media.innerenter.qqcom.index_navigation">DNF</a>
+							<a target="_blank" href="http://cf.qq.com/?ADTAG=media.innerenter.qqcom.index_navigation">&nbsp;CF</a>
+							<a target="_blank" href="http://pvp.qq.com/?ADTAG=media.innerenter.qqcom.index_navigation">&nbsp;王者</a>
+		
+							<a target="_blank" href="http://nz.qq.com/main.shtml?ADTAG=media.innerenter.qqcom.index_navigation">&nbsp;逆战&nbsp;</a>
+							<a target="_blank" href="http://huoying.qq.com/act/a20141009landingpage/index.htm?via=45&ADTAG=ied.neiguang&ADTAG=media.innerenter.qqcom.index_navigation">火影OL</a>
+							<a target="_blank" href="http://wuxia.qq.com/?ADTAG=media.innerenter.qqcom.index_navigation">&nbsp;天刀&nbsp;</a>
+							<a target="_blank" href="http://iwan.qq.com/index.htm?ADTAG=media.innerenter.qqcom.indexnavigation">爱玩&nbsp;</a>
+							<a target="_blank" href="http://mxd2.qq.com/main.htm?ADTAG=media.innerenter.qqcom.index_navigation">冒险岛2</a>
+						</td>
+						<td width="30px">
+							<div class="game"></div>
+		
+						</td>
+					</tr>
+					<tr style="font-size: 12px;font-family: '微软雅黑';height: 34px;background-color:#F5F8FC;">
+						<td>
+							<a target="_blank" href="https://pc.qq.com/">软件&nbsp;</a>
+							<a target="_blank" href="https://pay.qq.com/">Q币&nbsp;</a>
+							<a target="_blank" href="https://www.jd.com/?utm_source=qq.com&utm_medium=cpc&utm_campaign=dmp_77&utm_term=dmp_77_11727_d604816f27c2b5e98ae51fd59de8b1c43abfdac_1538472240">&nbsp;京东</a>
+							<a target="_blank" href="https://map.qq.com/#city=%D6%D0%B9%FA&wd=%D6%D0%B9%FA">&nbsp;&nbsp;腾讯地图</a>
+							<a target="_blank" href="https://docs.qq.com/">&nbsp;&nbsp;腾讯文档&nbsp;</a>
+							<a target="_blank" href="https://qian.qq.com/?stat_data=oth87ppcsy00222&ADTAG=SCQD.BD.PC.TXDH1">&nbsp;理财通</a>
+							<a target="_blank" class="more" href="http://www.qq.com/map/">&nbsp;&nbsp;全部</a>
+		
+						</td>
+						<td width="30px">
+							<div class="coffe"></div>
+		
+						</td>
+					</tr>
+		
+				</table>
+		
+			</div>
+			<div class="lastpart" style="overflow: hidden;float: left;">
+				<p class="ti" style="margin-left: 18px;font-size: 25px;color: #0C82FF;">
+					<a href="https://kbs.sports.qq.com/#hot" target="_blank">热门赛事</a>
+				</p>
+				<p class="ti" style="font-size: 14px;color: #0C82FF;">
+					<a href="https://kbs.sports.qq.com/#hot" target="_blank">&nbsp;&nbsp;2月4日&nbsp;&nbsp;|&nbsp;&nbsp;中午好，今天有22场热门比赛</a>
+				</p>
+			</div>
+			<div>
+				<a href="https://sports.qq.com/kbsweb/game.htm?mid=100000:54431123" target="_blank"><img src="img/QQ图片20200204140928.png" width="410px" height="240px"></a>
+			</div>
+		
+		</div>
+		
+	</body>
+</html>
